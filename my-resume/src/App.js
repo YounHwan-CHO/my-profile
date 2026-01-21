@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import myPhoto from './my_photo.jpg';
+import myPhoto from './ㄹㄹㄹ.jpg';
 
 function App() {
   return (
