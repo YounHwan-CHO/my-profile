@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import myPhoto from './ㄹㄹㄹ.jpg'; 
+
 
 function App() {
   // 
@@ -26,7 +26,7 @@ function App() {
         
         {/* 상단 프로필 */}
         <header style={{ textAlign: 'center', marginBottom: '30px' }}>
-          <img src={myPhoto} alt="프로필" style={{ width: '150px', height: '150px', borderRadius: '50%', objectFit: 'cover', border: '5px solid white', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }} />
+         
           <h1 style={{ color: '#2c3e50', marginTop: '15px' }}>HR 매니저 포트폴리오</h1>
           <p>2026년 목표: 독서 70권 완독 진행 중! 📚</p>
         </header>
