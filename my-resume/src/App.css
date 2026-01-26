@@ -1,78 +1,10 @@
-/* 기본 설정 */
-.App {
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-  color: #2c3e50;
-  line-height: 1.6;
-}
-
-/* 네비게이션 바 스타일 */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10%;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.logo {
-  font-weight: 800;
-  font-size: 1.2rem;
-  color: #27ae60; /* 포인트 컬러 */
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-
-/* 독서 목표 섹션 */
-.goals-section {
-  text-align: center;
-}
-
-.progress-container {
-  background-color: #ecf0f1;
-  border-radius: 20px;
-  margin: 20px 0;
-  height: 25px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.progress-bar {
-  background: linear-gradient(90deg, #2ecc71, #27ae60);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-  font-size: 0.8rem;
-  transition: width 1s ease-in-out;
-}
-
-/* 탭 버튼 스타일 */
-.tabs button {
-  transition: all 0.3s ease;
-  font-size: 1rem;
-  outline: none;
-}
-
-.tabs button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* 반응형 설정 (모바일에서도 예쁘게 보임) */
-@media (max-width: 768px) {
-  .tabs {
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .navbar {
-    padding: 15px 5%;
-  }
-}
+.App { font-family: 'Pretendard', sans-serif; background-color: #f4f7f6; min-height: 100vh; color: #2c3e50; margin: 0; }
+.main-header { background: linear-gradient(135deg, #2c3e50, #4ca1af); padding: 100px 20px; text-align: center; color: white; }
+.badge { background: rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; margin-bottom: 15px; display: inline-block; }
+.container { max-width: 700px; margin: -50px auto 0; padding: 20px; }
+.card { background: white; border-radius: 24px; padding: 35px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); margin-bottom: 30px; }
+.progress-bar-bg { background: #edf2f7; border-radius: 10px; height: 14px; margin: 15px 0; overflow: hidden; }
+.progress-bar-fill { background: linear-gradient(90deg, #48bb78, #38b2ac); height: 100%; border-radius: 10px; transition: 1.5s ease; }
+.tab-buttons { display: flex; justify-content: center; gap: 12px; margin-bottom: 25px; flex-wrap: wrap; }
+.tab-buttons button { padding: 12px 25px; border: none; border-radius: 15px; background: white; cursor: pointer; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: 0.3s; }
+.tab-buttons button.active { background: #2c3e50; color: white; transform: translateY(-3px); }
